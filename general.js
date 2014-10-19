@@ -1,4 +1,3 @@
-alert('hola');
 $(function(){
     $('#menu').css('width', '120px').css('height', 'auto').css('overflow', 'hidden').css('left', '-110px').css('position', 'fixed').css('top', '0').css('bottom', '0').css('background-color','rgba(255,255,255,0.35)');
     $('#sky').css('margin-bottom', '12px');

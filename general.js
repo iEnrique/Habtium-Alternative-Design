@@ -9,7 +9,7 @@ $(function(){
         $(this).css('text-shadow', '0 1px 4px rgba(255,255,255,0.75), 0 -1px 4px rgba(255,255,255,0.75), 1px 0 4px rgba(255,255,255,0.75), -1px 0 4px rgba(255,255,255,0.75)');
     });
     $('#menu>ul>li>a').mouseleave(function(){
-        $(this).css('text-shadow', '');
+        $(this).css('text-shadow', '0 1px 2px rgba(0,0,0,0.5)');
         $('#menu>ul>li.active>a').css('text-shadow', '0 1px 4px rgba(255,255,255,0.75), 0 -1px 4px rgba(255,255,255,0.75), 1px 0 4px rgba(255,255,255,0.75), -1px 0 4px rgba(255,255,255,0.75)');
     });
     $('#menu').hover(function(){

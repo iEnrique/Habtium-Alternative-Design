@@ -1,21 +1,4 @@
 $(function(){
-    $('#menu').css('width', '120px').css('height', 'auto').css('overflow', 'hidden').css('left', '-110px').css('position', 'fixed').css('top', '0').css('bottom', '0').css('background-color','rgba(255,255,255,0.35)');
-    $('#sky').css('margin-bottom', '12px');
-    $('#menu>ul>li').css('float', 'none');
-    $('#menu>ul>li.active').css('background-color', 'rgba(255,255,255,0.35)');
-    $('#menu>ul>li>a').css('text-shadow', '0 1px 2px rgba(0,0,0,0.5)');
-    $('#menu>ul>li.active>a').css('text-shadow', '0 1px 4px rgba(255,255,255,0.75), 0 -1px 4px rgba(255,255,255,0.75), 1px 0 4px rgba(255,255,255,0.75), -1px 0 4px rgba(255,255,255,0.75)');
-    $('#menu>ul>li>a').hover(function(){
-        $(this).css('text-shadow', '0 1px 4px rgba(255,255,255,0.75), 0 -1px 4px rgba(255,255,255,0.75), 1px 0 4px rgba(255,255,255,0.75), -1px 0 4px rgba(255,255,255,0.75)');
-    });
-    $('#menu>ul>li>a').mouseleave(function(){
-        $(this).css('text-shadow', '0 1px 2px rgba(0,0,0,0.5)');
-        $('#menu>ul>li.active>a').css('text-shadow', '0 1px 4px rgba(255,255,255,0.75), 0 -1px 4px rgba(255,255,255,0.75), 1px 0 4px rgba(255,255,255,0.75), -1px 0 4px rgba(255,255,255,0.75)');
-    });
-    $('#menu').hover(function(){
-        $(this).animate({left:'0'}, 'fast');
-    });
-    $('#menu').mouseleave(function(){
-        $(this).animate({left:'-110px'}, 'fast');
-    });
+    $('head').append('<style class="cp-pen-styles">@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500); body { font: 100% Roboto; background: #303f9f; margin: 50px; } nav { width: 300px; background: white; color: rgba(0, 0, 0, 0.87); -webkit-clip-path: circle(24px at 30px 24px); clip-path: circle(24px at 32px 24px); -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s; transition: -webkit-clip-path 0.5625s, clip-path 0.375s; } nav:hover { -webkit-transition-timing-function: ease-out; transition-timing-function: ease-out; -webkit-transition-duration: 0.75s; transition-duration: 0.75s; -webkit-clip-path: circle(390px at 225px 24px); clip-path: circle(390px at 150px 24px); } a { display: block; line-height: 50px; padding: 0 20px; color: inherit; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; } a:hover { background: #ffe082; } a:active { background: #ffca28; } .navicon { padding: 23px 20px; cursor: pointer; -webkit-transform-origin: 32px 24px; -ms-transform-origin: 32px 24px; transform-origin: 32px 24px; } .navicon div { position: relative; width: 20px; height: 2px; background: rgba(0, 0, 0, 0.87); } .navicon div:before, .navicon div:after { display: block; content: ""; width: 20px; height: 2px; background: rgba(0, 0, 0, 0.87); position: absolute; } .navicon div:before { top: -7px; } .navicon div:after { top: 7px; }</style>')
+    $('body>div>div>div>nav').prepend('<div class="navicon"><div></div></div>');
 });
